@@ -44,7 +44,7 @@ class Fraction:
         :param other: Fraction -- the other fraction number.
         :return: Fraction -- a **new** Fraction object, which is the subtraction of self - other.
         """
-        return Fraction(self.numerator - other.numerator, self.denominator)
+        return Fraction(self.numerator * other.denominator - other.numerator * self.denominator, self.denominator * other.denominator)
 
     def __mul__(self, other):
         """
